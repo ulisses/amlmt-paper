@@ -1,10 +1,20 @@
 UNAME := $(shell uname -s)
 REL=modLangCorta11
+<<<<<<< HEAD
 PDF=$(REL).pdf
 TEX=$(REL).tex
 SECS="abstract.tex $(shell for f in $(find sections); do echo "$f"; done)"
+=======
+BIB=$(REL).bib
+PDF=${REL}.pdf
+TEX=${REL}.tex
+SD=sections/
+SECS=$(SD)intro.tex $(SD)massess.tex $(SD)applymetrics.tex\
+  $(SD)casestudy.tex $(SD)tools.tex $(SD)conc.tex abstract.tex
+SUBSECS=$(SD)sdmetrics.tex $(SD)sparkx.tex $(SD)ibmrational.tex
+>>>>>>> e15c61c271d674cedd23ccb9f2185f40b636acac
 
-all:${PDF} open
+all:${PDF}
 
 # Compile the PDF file
 $(PDF):$(TEX) $(SECS)
