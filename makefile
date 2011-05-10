@@ -3,14 +3,12 @@ REL=modLangCorta11
 BIB=$(REL).bib
 PDF=${REL}.pdf
 TEX=${REL}.tex
-SECS=
-#"sections/intro.tex sections/massess.tex\
-# sections/applymetrics.tex sections/casestudy.tex\
-# sections/tools.tex sections/conc.tex abstract.tex"
-SUBSECS=
-#"sections/sdmetrics.tex sections/sparkx.tex sections/ibmrational.tex"
+SD=sections/
+SECS=$(SD)intro.tex $(SD)massess.tex $(SD)applymetrics.tex\
+  $(SD)casestudy.tex $(SD)tools.tex $(SD)conc.tex abstract.tex
+SUBSECS=$(SD)sdmetrics.tex $(SD)sparkx.tex $(SD)ibmrational.tex
 
-all:${PDF} open
+all:${PDF}
 
 # Compile the PDF file
 $(PDF): $(TEX) $(BIB) $(SECS) $(SUBSECS) 
