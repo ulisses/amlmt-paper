@@ -2,7 +2,7 @@ UNAME := $(shell uname -s)
 REL=modLangCorta11
 PDF=$(REL).pdf
 TEX=$(REL).tex
-SECS="abstract.tex $(shell for f in $(find sections); do echo "$f"; done)"
+SECS="abstract.tex $(shell find sections)"
 
 all:$(PDF)
 
@@ -28,12 +28,14 @@ ifeq ($(UNAME),Linux)
 	xpdf $(PDF)
 endif
 
+# Clean rules
 clean:
+	@echo "Cleaning the shop"
+	@find . -maxdepth 1 \(  \! -iname "*.pdf" \! -iname README* \! -iname .gitignore \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
+	@find . \( -name *~ -or -name *.*~ \) -exec rm '{}' \;
+
+cleanAll:
 	@echo "Cleaning the shop"
 	@find . -maxdepth 1 \( \! -iname README* \! -iname .gitignore \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
 	@find . \( -name *~ -or -name *.*~ \) -exec rm '{}' \;
 
-clean_git:
-	@echo "Cleaning the git shop"
-	@find . -maxdepth 1 \(  \! -iname "*.pdf" \! -iname README* \! -iname .gitignore \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
-	@find . \( -name *~ -or -name *.*~ \) -exec rm '{}' \;
