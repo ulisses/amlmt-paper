@@ -30,10 +30,10 @@ endif
 
 clean:
 	@echo "Cleaning the shop"
-	@find . -maxdepth 1 \( \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
+	@find . -maxdepth 1 \( \! -iname README* \! -iname .gitignore \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
 	@find . \( -name *~ -or -name *.*~ \) -exec rm '{}' \;
 
 clean_git:
 	@echo "Cleaning the git shop"
-	@find . -maxdepth 1 \( \! -iname "*.pdf" \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
+	@find . -maxdepth 1 \(  \! -iname "*.pdf" \! -iname README* \! -iname .gitignore \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
 	@find . \( -name *~ -or -name *.*~ \) -exec rm '{}' \;
