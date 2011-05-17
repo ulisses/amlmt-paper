@@ -1,8 +1,33 @@
-\section{Tools}
+\section{Tools for UML Metrics Specification}\label{tools}
 
---Surgiram para já estes 3 nomes, o ideal seria caso aparecessem mais escolhermos os 3 ou 4 principais.
+Nowadays, the most popular UML tools for software application development are \textsf{Visual Paradigm for UML\footnote{Available at \url{http://www.visual-paradigm.com/product/vpuml/}}} and \textsf{Poseidon for UML}\footnote{Available at \url{http://www.gentleware.com/products.html}}.
+They enable a visual environment to model software, which reduces the complexity of software design.
+However, they not support metrics specification - it is required to use other tools, designed for this task.
+In the next subsections, we will introduce the leading systems on the quantitative analysis of UML models structural properties, and put them to test for explore their features with a real case-study.
 
-Referir para cada ferramenta:
+One of the tools that we are going to address is SDMetrics\footnote{SDMetrics can be found at \url{http://www.sdmetrics.com/}}, a design measurement tool for UML models.
+%SDMetrics is not free so we required an academic license from the staff, which was quickly provided. 
+%Its core is open source and is available under the GNU Affero General Public License.
+Although its core is open source and available under the GNU Affero General Public License, SDMetrics GUI it is not freely distributed. 
+In order to explore all the system features, SDMetrics staff gently provided us an Academic License which we sincerely would like to thank.
+
+The core functionalities of SDMetrics include:
+\begin{itemize}
+\item the configurable XMI parser for XMI1.0/1.1/1.2/2.0/2.1 input files;
+\item the metrics engine to calculate the user-defined design metrics;
+\item the rule engine to check the user-defined design rules.
+\end{itemize}
+
+
+The other tool we put to test is the \textsf{Sparx System Enterprise Architect}{\footnote{\url{http://www.sparxsystems.com.au}}}, a team-based modeling environment. 
+It embraces the full product development lifecycle, supporting both software design, requirements management, and metrics calculation for Use Case Diagrams.
+Thus, it allow to estimate the complexity of the project in a earlier stage, as well as the complexity associated with each actor of the system.
+
+The case-study used to explore this tools (.......)
+***Apresentar agora o Case study: tipo de projecto, principais características, contexto onde se insere - ou seja, para e pq foi desenvolvido... Se virmos q a descriçao fica mt grande, +vale manter a ideia inicial de por 1a sec só p o CS, ou até ser a primeira subsecção desta parte - ideia a pensar\\
+
+***NOTAS:
+--Referir para cada ferramenta:
 
 * o que são capazes de fazer (algumas métricas que calculam),
 
@@ -10,14 +35,4 @@ Referir para cada ferramenta:
 
 * que input recebem (XML, formato próprio, etc...)
 
-* o que devolvem (se fazem análise apenas das métricas em separado ou se tentam ir mais longe e dão resultados sobre qualidade, tamanho do projecto, etc...)\\
-\\
-
-One of the tools that we are going to adress is SDMetrics. SDMetrics is a design measurement tool for the UML\footnote{SDMetrics can be found at \url{http://www.sdmetrics.com/}}.\\
-SDMetric is not free so we required an academic license from the staff, wich was quickly provided. It's core is open source and is available under the GNU Affero General Public License.\\
-The core functionalities of SDMetrics include:
-\begin{itemize}
-\item the configurable XMI parser for XMI1.0/1.1/1.2/2.0/2.1 input files,
-\item the metrics engine to calculate the user-defined design metrics,
-\item the rule engine to check the user-defined design rules.
-\end{itemize}
+* o que devolvem (se fazem análise apenas das métricas em separado ou se tentam ir mais longe e dão resultados sobre qualidade, tamanho do projecto, etc...)
