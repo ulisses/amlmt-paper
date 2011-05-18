@@ -41,6 +41,24 @@ cleanAll:
 
 
 
+
+
+
+
+
+
+
+
+
+# extra
+me:
+	latex  $(REL)
+	bibtex $(REL)
+	latex  $(REL)
+	latex  $(REL)
+	make open
+	make clean
+
 update:
 	git commit -a
 	git push
