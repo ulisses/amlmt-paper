@@ -42,6 +42,6 @@ cleanAll:
 
 
 update:
-	git pull
 	git commit -a
-	gut push
+	git push
+	git pull
