@@ -39,3 +39,27 @@ cleanAll:
 	@find . -maxdepth 1 \( \! -iname README* \! -iname .gitignore \! -iname "*.bib" \! -iname "*.tex" -type f \! -iname "makefile" \! -iname "*.sty" \! -iname "*.cls" \) -exec rm '{}' \;
 	@find . \( -name *~ -or -name *.*~ \) -exec rm '{}' \;
 
+
+
+
+
+
+
+
+
+
+
+
+# extra
+me:
+	latex  $(REL)
+	bibtex $(REL)
+	latex  $(REL)
+	latex  $(REL)
+	make open
+	make clean
+
+update:
+	git pull
+	git commit -a
+	git push

@@ -1,0 +1,60 @@
+\subsection{Class Diagram Metrics}
+
+% -- estou a incluir aqui as métricas q temos no nosso artigo, + notas sobre o trabalho d Michele Marchesi
+
+These diagrams are used to describe the types of objects in a system and their relationships.
+They describe the structure of a system by showing the system classes, their attributes, methods and the relationships between them.
+Their quality have a huge impact on the final quality of the software under development, as they describe the general model of the system information.
+
+Measures like the \emph{Number of Attributes in the Class} (NAC), the \emph{Number of Operations in the Class} (NOC), \emph{Number of Inherited Attributes } (NIA), \emph{Number of descents/ancestors od a Class}(NDC/NAC), or even the \emph{Number of Interfaces Implemented} (NII) are used both for indicate the system complexity and as a index of quality.\\
+
+%In an ideal system, the interdependencies among packages and classes must be minimal
+
+--- Citar mais trabalhos sobre DC com+exemplos de métricas %avaliar diversas refs q encontrei
+
+ --- Falta Introduzir textualmente o trabalho d Marchesi nesta área para contextualizar as tabelas;
+
+
+\begin{table}
+
+\begin{minipage}[b]{0.5\linewidth}\centering
+\begin{tabular}{ p{1,5cm} | p{4cm}}
+\multicolumn{2}{l}{\textbf{Marchesi Metrics}} \\ \hline
+\textbf{Metric} & \textbf{Description} \\ \hline
+NC & Number of Classes \\ \hline
+CL1 & Weighted Number of responsibilities of a Class   \\ \hline 
+CL2 & Weighted Number of Dependencies of a Class \\ \hline 
+CL3 & Depth of inheritance tree \\ \hline 
+CL4 & Number of immediate subclasses of a given class \\ \hline 
+CL5 & Number of distinct class \\ \hline 
+\end{tabular}
+\caption{\small{Marchesi Class Diagram Metrics}}
+\label{t:dcm}
+%\end{table}
+%\end{center}
+\end{minipage}
+\hspace{0.3cm}
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+
+%\begin{center}
+%\begin{table}[h]
+\begin{tabular}{ p{1,5cm} | p{4cm}}
+\multicolumn{2}{l}{\textbf{Marchesi Metrics}} \\ \hline
+\textbf{Metric} & \textbf{Description} \\ \hline
+NP & Number of Packages. \\ \hline 
+PK1 & Number of Classes \\ \hline
+PK2 & Weighted Number of responsibilities of a Class   \\ \hline 
+PK3 & Overall Coupling among Packages \\ \hline 
+\end{tabular}
+\caption{\small{Marchesi Package Metrics}}
+\label{t:pcm}
+%\end{table}
+%\end{center}
+\vspace{0.78cm}
+\end{minipage}
+\end{table}
+
+
+
+

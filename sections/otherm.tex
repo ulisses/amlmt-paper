@@ -1,0 +1,51 @@
+\subsection{Other Metrics}
+
+-- estou a incluir aqui as métricas q temos no nosso artigo, + notas sobre o trabalho d Michele Marchesi
+
+-- conforme fique no final, pensei em incluir+algumas notas sobre outros trabalhos q fui encontrando, mas ficaria para dp da deadline desta semana, p o resto ser revisto entretanto e vermos se ainda há espaço. \\
+
+--- Falta para além de traduzir, contextualizar 1pc+\\
+
+
+No caso dos Diagramas de Estado, estes são utilizados para descrever o comportamento de um objecto. 
+Um estado representa uma situação de um objecto que se prolonga durante um determinado intervalo de tempo, durante o qual não sofre estímulos de objectos exteriores nem há qualquer alteração em nenhum dos seus atributos.
+
+\begin{center}
+\begin{table}[h]
+\begin{tabular}{ p{2cm} | p{10,5 cm}}
+\multicolumn{2}{l}{\textbf{Métricas de Estados}} \\ \hline
+\textbf{Métrica}  & \textbf{Descrição} \\ \hline
+TEffects  & The number of transitions with an effect in the state machine. \\ \hline 
+TGuard & The number of transitions with a guard in the state machine. \\ \hline 
+TTrigger & The number of triggers of the transitions of the state machine. \\ \hline 
+States & The number of states in the state machine. \\ \hline 
+\end{tabular}
+\caption{\small{Exemplos de Métricas sobre Diagramas de Estados}}
+\label{t:estado}
+\end{table}
+\end{center}
+
+As métricas associadas a este tipo de diagrama encontram-se associadas à complexidade e dimensão do problema~\cite{EVMmdm}.
+Na Tabela~\ref{t:estado} podemos observar alguns exemplos de atributos que podemos medir com o uso de métricas sobre este tipo de diagramas.
+Outras métricas bastante comuns para este tipo de modelo contabilizam, por exemplo, o número de transições entre estados ou até o número de actividades definidas em cada estado.
+
+Os Diagramas de Actividade descrevem fluxos de trabalho e são ainda úteis para detalhar operações de uma classe (incluindo comportamentos que possuam processamento paralelo).
+
+
+\begin{center}
+\begin{table}[h]
+\begin{tabular}{ p{2cm}|   p{10,5 cm}}
+\multicolumn{2}{l}{\textbf{Métricas de Actividade}} \\ \hline
+\textbf{Métrica} & \textbf{Descrição} \\ \hline
+Actions  & The number of actions of the activity. \\ \hline 
+ObjectNodes & The number of object nodes of the activity. \\ \hline 
+Pins  & The number of pins on nodes of the activity. \\ \hline 
+Guards  & The number of guards defined on object and control flows of the activity. \\ \hline 
+\end{tabular}
+\caption{\small{Exemplos de Métricas sobre Diagramas de Actividade}}
+\label{t:act}
+\end{table}
+\end{center}
+
+Como podemos observar pelos exemplos da Tabela~\ref{t:act}, existem também diversas métricas sobre Diagramas de Actividade. 
+Para além destas, podem ainda ser medidos atributos representativos do número de grupos ou regiões de actividade num diagrama, o número de fluxos de objectos, ou até o número de excepções de cada diagrama.

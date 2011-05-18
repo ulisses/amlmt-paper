@@ -1,0 +1,65 @@
+\subsection{\textrm{CK} Metrics}
+
+%As CK Metrics, umas das primeiras métricas para o modelo Orientado a Objectos (OO), foram propostas por Chidamber e  Kemerer \cite{Chidamber:1994:MSO:630808.631131}. O conjunto das CK Metrics consiste em seis métricas: Weighted Methods Per Class (WMC), Depth of Inheritance Tree (DIT), Number of Children (NOC), Coupling between Object Classes (CBO), Response For a Class (RFC), e Lack of Cohesion in Methods (LCOM). Estas métricas foram depois adaptadas para linguagens de modelação, tal como é mostrado em ~\cite{Power2}. De seguida, será explicado como são calculadas cada uma das métricas referidas.
+
+One of the most popular suites of OO metrics was proposed by Chidamber and Kemerer \cite{Chidamber:1994:MSO:630808.631131}.
+They were proposed to capture different aspects of object-oriented designs, including complexity, coupling and cohesion, and were posteriorly adapted for modeling languages as we can see in~\cite{Power2}.
+
+This suite is composed by six metrics: Weighted Methods Per Class (WMC), Depth of Inheritance Tree (DIT), Number of Children (NOC), Coupling between Object Classes (CBO), Response For a Class (RFC), e Lack of Cohesion in Methods (LCOM).
+We detail bellow each metric and its features.\\
+
+\textbf{Weighted methods per class} (WMC): This metric regards to the complexity of a class's methods, being equal to the sum of the complexities of those methods defined. There two kinds of WMC metrics:
+\begin{itemize}
+\item \textbf{$WMC1_{1}$} can be obtained from a class diagram of a \umlS model. It is computed by identifying the class and counting the number of methods in that class, which means that, in this case, the WMC metric considers a method as a unity.
+\item \textbf{$WMC_{cc}$} is also computed by identifying the class and counting the number of methods, but each method is not a unity, is the result of a McCabe Cyclomatic Complexity of it. Another difference is that this kind of WMC cannot be computed only with information of diagrams class, needing information of other kinds of diagrams, like sequence or activity.
+\end{itemize}
+
+%This metric is concerned with the complexity of the methods within a given class. It is equal to the sum of the complexities of each method defined in a class. If we consider the complexity of each method to be unity then the WMC metric for a class is equal to the number of methods defined within that class, we refer to this as WMC1 . The WMC1 metric for a class can be obtained from the class diagrams of a UML model by identifying the class and counting the number of methods in that class. Alternatively, we can consider the complexity of each method to be McCabe’s Cyclomatic complexity [8], which we refer to as WMCcc . The activity, sequence and communication diagrams clearly contain information relevant to WMCcc , but it is equally plausible that the state machine diagram could be used to compute this value for the class as a whole.
+
+%Esta métrica diz respeito à complexidade que cada método tem para cada classe. Assim, para se obter o valor desta métrica soma-se
+%as complexidades que cada método pertencente a uma classe tem. Se considerarmos a complexidade de cada método como medida unitária
+%então a métrica WMC para um classe é igual ao número de métodos definidos nessa classe, referimo-nos a isto como WMC1.
+%A métrica WMC1 para uma classe pode ser obtida pelo diagrama de classes de um modelo UML, identificando a classe e contando o número
+%de métodos que essa classe implementa. Aternativamente podemos considerar a complexidade de cada método como o McCabe Cyclomatic Complexity, que referimos
+%como WMCcc. Os diagramas de actividade, sequência e comunicação contêm informação relevante para o WMCcc, mas é igualmente
+%plausível que os diagramas de estado possam ser usados para calcular este valor para a classe como um todo.\\
+
+\textbf{Depth of inheritance tree} (DIT): This is metric is equal to the maximum length from the class to the root of the inheritance, which could be defined as the depth of the class. It is computed by taking the union of all the class diagrams in a \umlS model and traversing the inheritance hierarchy of the class.
+
+%This is a measure of the depth of a class in the inheritance
+%tree. It is equal to the maximum length from the class to the
+%root of the inheritance tree. This metric can be computed for
+%a class by taking the union of all the class diagrams in a UML
+%model and traversing the inheritance hierarchy of the class.
+%
+%Esta é uma medida de profundidade da classe relativamente à sua árvore de herança. Esta métrica define-se por ser igual à distância máxima
+%desde a classe até à sua super classe root na árvore de herança. Esta métrica pode ser calculada para uma classe fazendo a união de todos os diagramas
+%de classe num modelo \umlS e atravessando a hierarquia de herança desta classe.\\
+
+\textbf{Number of children} (NOC): This metric represents the number of childs and descendants of a certain class. Can be obtained gathering all diagrams class, in a \umlS modulation, and checking all the inheritance relations of the class.
+
+\textbf{Coupling between object classes}: Two classes are related if the method of a class uses a instance variable or method of another class. Counting the number of classes to which the class are related and counting all kind of references of the attributes and parameters of the methods of the class, an estimate of this metric's value can be obtained from the class diagrams. Though, it is possible to calcute a more precise value if the behavioural diagrams are taken into account, since the usage of instance variable and invocation methods are additional information.
+
+\textbf{Response for a class} (RFC) - This metric is the number of methods that can be invoked by an object of a given class. It can be obtained from a class diagram and, also, by behaviour diagrams (e.g. sequece diagrams), which can inform of several methods of other classes that are invoked by each of the class's methods.
+
+\textbf{Lack of cohesion in methods} (LCOM)- Is the metric that measure the number of sets of instance variables accessed by every pair of methods, of a given class, that has a non-empty intersection. With the intention of computing a value for this metric, it is essential the information of the usage instance variables by the methods of a class, i.e., it is needed a sequence diagram (a class diagram does not have information about the usage).
+
+The set of metrics that were here defined can be found and cited in several papers (probably the most famous~\cite{Power2}). They are currently the most studied and used to evaluate \uml models.\\
+
+%\textbf{Number of children} (NOC): Esta métrica representa o número de decendentes imediatos de uma determinada classe. Esta métrica pode ser obtida ao juntar todos os diagramas de classes numa modelação \umlS e verificar todas as relações de herança da classe.\\
+
+%\textbf{Coupling between object classes}: Duas classes estão relacionadas se o método de uma classe usa uma variável de instância ou um método da outra classe. Uma estimativa desta métrica pode ser obtida a partir dos diagramas de classes, contando o número de classes relacionadas com a classe em questão e contando todos os tipos de referência dos atributos e todos os parâmetros dos métodos da classe. Para obter um valor mais fidedigno, pode ter em conta informação dada pelos diagramas comportamentais, de forma a obter mais informação sobre o uso das variáveis de instância e de métodos de invocação. O diagrama de sequência, por exemplo, oferece informação directa sobre interacções entre métodos de classes diferentes. \\
+
+%\textbf{Response for a class} (RFC) - esta métrica é a contagem do número de métodos que potencialmente poderão ser invocados por um objecto de uma dada classe. O número de métodos de uma classe pode ser obtido a partir de um diagrama de classes, mas o número de métodos de outras classes que são invocadas por cada um dos métodos da classe requer informação à cerca do comportamento dessa classe. Esta informação pode ser derivada a partir da inspecção de vários diagramas de comportamento (diagramas sequencias/diagramas de actividade), de modo a obter a identidade dos métodos invocados.\\
+
+%\textbf{Lack of cohesion in methods} (LCOM)- ou seja, falta de coesão entre métodos. Calcular esta métrica para uma dada classe envolve descobrir, para cada possível par de métodos, se os conjuntos de variáveis de instância acedidos por cada método têm uma interseção que não um conjunto vazio.
+%Para ser possível computar um valor para esta métrica, informação do modo de uso das variáveis de instância pelos métodos de uma classe é essencial. Esta informação não pode ser obtida através de um diagrama de classes. No entanto, o valor máximo para esta métrica pode ser computado usando o número de métodos na classe. Diagramas contendo essa informação sobre o uso das variáveis, por exemplo, os diagramas sequenciais podem ser usados para calcular esta métrica.\\
+
+%O conjunto de métricas aqui definidas são referidos em vários papers e sem sombra de dúvidas são as mais estudadas, e também as mais utilizadas para avaliar modelos \uml.\\
+%Estas focam-se mais nos diagramas de classes visto estes serem os que mais facilmente se relacionam com código e é preciso ter em consideração que como estas regras derivam 
+%directamente do paradigma Orientado-a-Objectos, é mais fácil aplicá-las aos diagramas de classes. Para além disso este tipo de diagramas do ponto de vista da implementação 
+%dão uma visão mais geral do sistema que modela.\\
+%Estas métricas em particular são detalhadas por McQuillan e Power em~\cite{Power}. 
+
+%Também existe o SDMetrics software, que avalia além destas, um conjunto mais extenso de métricas, que analisam outros diagramas além do de classes, como por exemplo os diagramas de estados e de actividades. \\  
+% Como grande parte das métricas derivam de fórmulas matemáticas, no capítulo seguinte serão apresentadas algumas que são essenciais para o cálculo dos valores das métricas apresentadas anteriormente. 
