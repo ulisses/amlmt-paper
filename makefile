@@ -59,13 +59,7 @@ me:
 	make open
 	make clean
 
-upload:
+update:
+	git pull
 	git commit -a
 	git push
-
-download:
-	git pull
-
-update:
-	make upload
-	make download
