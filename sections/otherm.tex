@@ -1,17 +1,10 @@
 \subsection{Other Metrics}
 
--- estou a incluir aqui as métricas q temos no nosso artigo, + notas sobre o trabalho d Michele Marchesi
+Statechart diagrams illustrate the behavior of an object.
+They define different states of an object during its lifetime, which are changed by events.
+A \emph{state} expresses an action of an object during a certain time, when it don't receive external stimulus nor is there any change in its attributes. 
 
--- conforme fique no final, pensei em incluir+algumas notas sobre outros trabalhos q fui encontrando, mas ficaria para dp da deadline desta semana, p o resto ser revisto entretanto e vermos se ainda há espaço. \\
-
---- Falta para além de traduzir, contextualizar 1pc+\\
-
-
-No caso dos Diagramas de Estado, estes são utilizados para descrever o comportamento de um objecto. 
-Um estado representa uma situação de um objecto que se prolonga durante um determinado intervalo de tempo, durante o qual não sofre estímulos de objectos exteriores nem há qualquer alteração em nenhum dos seus atributos.
-
-\begin{center}
-\begin{table}[h]
+\begin{table}[h]\centering
 \begin{tabular}{ p{2cm} | p{10,5 cm}}
 \multicolumn{2}{l}{\textbf{Métricas de Estados}} \\ \hline
 \textbf{Métrica}  & \textbf{Descrição} \\ \hline
@@ -23,17 +16,14 @@ States & The number of states in the state machine. \\ \hline
 \caption{\small{Exemplos de Métricas sobre Diagramas de Estados}}
 \label{t:estado}
 \end{table}
-\end{center}
 
-As métricas associadas a este tipo de diagrama encontram-se associadas à complexidade e dimensão do problema~\cite{EVMmdm}.
-Na Tabela~\ref{t:estado} podemos observar alguns exemplos de atributos que podemos medir com o uso de métricas sobre este tipo de diagramas.
-Outras métricas bastante comuns para este tipo de modelo contabilizam, por exemplo, o número de transições entre estados ou até o número de actividades definidas em cada estado.
+Measures like the \emph{Number of Entry Actions}, \emph{Number of Exit Actions}, \emph{Number of Transitions}, or even the \emph{Number of Activities} are associated to the complexity and dimension of the problem~\cite{EVMmdm}.
+In Table~\ref{t:estado} we can notice some examples from measurable attributes for this type of diagram.
 
-Os Diagramas de Actividade descrevem fluxos de trabalho e são ainda úteis para detalhar operações de uma classe (incluindo comportamentos que possuam processamento paralelo).
+Activity diagrams describe work flows and are very useful for detail operations of a class (including behaviors expressed by parallel processing).
+As we can see in Table~ref{t:act} several metrics for this diagrams are available.
 
-
-\begin{center}
-\begin{table}[h]
+\begin{table}[h]\centering
 \begin{tabular}{ p{2cm}|   p{10,5 cm}}
 \multicolumn{2}{l}{\textbf{Métricas de Actividade}} \\ \hline
 \textbf{Métrica} & \textbf{Descrição} \\ \hline
@@ -45,7 +35,5 @@ Guards  & The number of guards defined on object and control flows of the activi
 \caption{\small{Exemplos de Métricas sobre Diagramas de Actividade}}
 \label{t:act}
 \end{table}
-\end{center}
 
-Como podemos observar pelos exemplos da Tabela~\ref{t:act}, existem também diversas métricas sobre Diagramas de Actividade. 
-Para além destas, podem ainda ser medidos atributos representativos do número de grupos ou regiões de actividade num diagrama, o número de fluxos de objectos, ou até o número de excepções de cada diagrama.
+Besides these metrics, it is possible to measure attributes like the \emph{Number of Activity Groups/Zones}, the \emph{Number of object flows} or even the \emph{Number of Exceptions} of each diagram. 
