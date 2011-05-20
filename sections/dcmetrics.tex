@@ -1,22 +1,14 @@
 \subsection{Class Diagram Metrics}
 
-% -- estou a incluir aqui as métricas q temos no nosso artigo, + notas sobre o trabalho d Michele Marchesi
-
-These diagrams are used to describe the types of objects in a system and their relationships.
-They describe the structure of a system by showing the system classes, their attributes, methods and the relationships between them.
+These diagrams are used to describe the types of objects in a system and the relationships among them.
+They describe the structure of a system by showing the system classes, their attributes and methods or operations.
 Their quality have a huge impact on the final quality of the software under development, as they describe the general model of the system information.
 
-Measures like the \emph{Number of Attributes in the Class} (NAC), the \emph{Number of Operations in the Class} (NOC), \emph{Number of Inherited Attributes } (NIA), \emph{Number of descents/ancestors od a Class}(NDC/NAC), or even the \emph{Number of Interfaces Implemented} (NII) are used both for indicate the system complexity and as a index of quality.\\
-
-%In an ideal system, the interdependencies among packages and classes must be minimal
-
---- Citar mais trabalhos sobre DC com+exemplos de métricas %avaliar diversas refs q encontrei
-
- --- Falta Introduzir textualmente o trabalho d Marchesi nesta área para contextualizar as tabelas;
-
+Measures like the \emph{Number of Attributes in the Class} (NAC), the \emph{Number of Operations in the Class} (NOC), \emph{Number of Inherited Attributes } (NIA), \emph{Number of descents/ancestors od a Class}(NDC/NAC), or even the \emph{Number of Interfaces Implemented} (NII) are used both for indicate the system complexity and as a index of quality.
+Many works present several metrics for this diagrams~\cite{DBLP:journals/Lobjet/GeneroPC00},~\cite{Eichelberger_onclass},~\cite{Yi04acomparison}.
+The OOA metrics defined by Marchesi~\cite{Marchesi:1998:OMU:522081.795010} also contemplate Class Diagrams, as we can see in Table~\ref{t:dcm}.
 
 \begin{table}
-
 \begin{minipage}[b]{0.5\linewidth}\centering
 \begin{tabular}{ p{1,5cm} | p{4cm}}
 \multicolumn{2}{l}{\textbf{Marchesi Metrics}} \\ \hline
@@ -36,7 +28,6 @@ CL5 & Number of distinct class \\ \hline
 \hspace{0.3cm}
 \begin{minipage}[b]{0.5\linewidth}
 \centering
-
 %\begin{center}
 %\begin{table}[h]
 \begin{tabular}{ p{1,5cm} | p{4cm}}
@@ -55,6 +46,8 @@ PK3 & Overall Coupling among Packages \\ \hline
 \end{minipage}
 \end{table}
 
-
-
+In UML, classes can be grouped in Packages to define subsystems or even for implementation purposes.
+The measurement of a package complexity is useful to forecast the development efforts of it.
+For that, we can measure properties like the \emph{Number of Classes of a Package}, the \emph{Total Number of Packages in the system}, or the \emph{Number of Interfaces in the Package}.
+Marchesi~\cite{Marchesi:1998:OMU:522081.795010} suggests several Package Metrics as we can see in Table~\ref{t:pcm} that allow to estimate this complexity.
 

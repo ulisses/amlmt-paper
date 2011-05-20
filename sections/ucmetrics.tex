@@ -1,21 +1,17 @@
 \subsection{Use Case Metrics}
 
-%-- estou a incluir aqui as métricas q temos no nosso artigo, + notas sobre o trabalho d Michele Marchesi
-
-
-The Use Cases Diagrams are graphical representations of entities which interact with the system under development - the \emph{actors}, and operations that the system must perform for them.
+The Use Cases Diagrams are graphical representations of entities which interact with the system - the \emph{actors}, and operations that the system must perform for them.
 They define a sequence of actions which illustrate a specific way of using the system.
 
-This diagrams are functional specifications, collected at the beginning of a system development process.
-They are crucial to an early estimate of the system complexity and its development efforts.\\
-  
+These diagrams are functional specifications, collected at the beginning of a system development process.
+They are crucial to an early estimate of the system complexity and its development efforts, as we can see by the UC metrics defined in several works like~\cite{Kim02developingsoftware},\cite{Mohagheghi05effortestimation}, \cite{Ribu01estimatingobject-oriented}.
+
+In fact, measuring the number of use cases, actors and communications among them is a good indicator of the system complexity, as well as to quantify the relationship between diagrams (i.e. estimates the number of UC that extends other, the number of UC that includes other, etc).
+
+One remarkable work on this area was performed by Michele Marchesi~\cite{Marchesi:1998:OMU:522081.795010}.
+Table~\ref{t:ucm} illustrates the Use Case metrics defined on this work. 
  
- --- Falta incluir algumas métricas sobre UC e referenciar alguns trabalhos na área;
- 
- --- Falta Introduzir textualmente o trabalho d Marchesi para contextualizar a tabela;
- 
-\begin{center}
-\begin{table}[h]
+\begin{table}[h]\centering
 \begin{tabular}{ p{1,5cm} | p{10.5cm}}
 \multicolumn{2}{l}{\textbf{Marchesi Metrics}} \\ \hline
 \textbf{Metric} & \textbf{Description} \\ \hline
@@ -25,7 +21,8 @@ UC2 & Number of communications among UC and Actors  \\ \hline
 UC3 & Number of communications among UC and Actores without redundancies \\ \hline 
 UC4 & Global complexity of the system \\ \hline 
 \end{tabular}
-\caption{\small{Use Case Metrics proposed by Michele Marchesi}}
+\caption{\small{Marchesi Use Case Metrics}}
 \label{t:ucm}
 \end{table}
-\end{center}
+
+The \textbf{UC4} metric represents a balance of the global complexity of the system, and its value is obtained through the values of \textbf{UC1}, \textbf{UC2} and \textbf{UC3} metrics.
