@@ -1,0 +1,84 @@
+\relax 
+\@writefile{toc}{\contentsline {title}{Assessing Modeling Languages, metrics and tools}{1}}
+\@writefile{toc}{\authcount {1}}
+\@writefile{toc}{\contentsline {author}{No Author Given}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}}
+\citation{Fenton}
+\citation{Serge}
+\citation{43044}
+\citation{USDPuml}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Applying Metrics To UML Models}{2}}
+\newlabel{metrics}{{2}{2}}
+\citation{Chidamber:1994:MSO:630808.631131}
+\citation{Power2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}\textrm  {CK} Metrics}{3}}
+\citation{Power2}
+\citation{DBLP:journals/Lobjet/GeneroPC00}
+\citation{Eichelberger_onclass}
+\citation{Yi04acomparison}
+\citation{Marchesi:1998:OMU:522081.795010}
+\citation{Marchesi:1998:OMU:522081.795010}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Class Diagram Metrics}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Use Case Metrics}{4}}
+\citation{Kim02developingsoftware}
+\citation{Mohagheghi05effortestimation}
+\citation{Ribu01estimatingobject-oriented}
+\citation{Marchesi:1998:OMU:522081.795010}
+\citation{EVMmdm}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip {Marchesi Class Diagram Metrics}}}{5}}
+\newlabel{t:dcm}{{1}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip {Marchesi Package Metrics}}}{5}}
+\newlabel{t:pcm}{{2}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip {Marchesi Use Case Metrics}}}{5}}
+\newlabel{t:ucm}{{3}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Other Metrics}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip {Exemplos de M\IeC {\'e}tricas sobre Diagramas de Estados}}}{6}}
+\newlabel{t:estado}{{4}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces \relax \fontsize  {9}{11}\selectfont  \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ {\leftmargin \leftmargini \parsep 0\p@ plus1\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 0\p@ }\belowdisplayskip \abovedisplayskip {Exemplos de M\IeC {\'e}tricas sobre Diagramas de Actividade}}}{6}}
+\newlabel{t:act}{{5}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Tools for UML Metrics Calculation}{6}}
+\newlabel{tools}{{3}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The general Usecase of the modelation}}{8}}
+\newlabel{img:usecase}{{1}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Excerpt of the Class diagram}}{8}}
+\newlabel{img:class}{{2}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}SDMetrics}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{Results}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Metrics Table for class diagrams}}{10}}
+\newlabel{img:table}{{3}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Histogram for class diagrams evaluating the metric NumAttr}}{10}}
+\newlabel{img:histogram}{{4}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Rule checking for Operations}}{11}}
+\newlabel{img:rule}{{5}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Sparx Systems Enterprise Architect}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{Results}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}IBM Rational}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{Results}{11}}
+\citation{g1:Millis:1998}
+\citation{g1:Fenton:1999}
+\citation{g1:kaner:2004}
+\citation{g1:Ieee1061:1998}
+\bibstyle{alpha}
+\bibdata{modLangCorta11}
+\bibcite{USDPuml}{BRJ05}
+\bibcite{43044}{CC90}
+\bibcite{Chidamber:1994:MSO:630808.631131}{CK94}
+\bibcite{Serge}{DDN00}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Metrics Assessment}{12}}
+\newlabel{assess}{{4}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{12}}
+\newlabel{conc}{{5}{12}}
+\bibcite{Eichelberger_onclass}{Eic}
+\bibcite{g1:Fenton:1999}{Fen99}
+\bibcite{Fenton}{FP98}
+\bibcite{EVMmdm}{GMP02}
+\bibcite{DBLP:journals/Lobjet/GeneroPC00}{GPC00}
+\bibcite{g1:Ieee1061:1998}{IEE98}
+\bibcite{Kim02developingsoftware}{KB02}
+\bibcite{g1:kaner:2004}{KB04}
+\bibcite{Mohagheghi05effortestimation}{MAC05}
+\bibcite{Marchesi:1998:OMU:522081.795010}{Mar98}
+\bibcite{g1:Millis:1998}{Mil98}
+\bibcite{Power2}{MP06}
+\bibcite{Ribu01estimatingobject-oriented}{Rib01}
+\bibcite{Yi04acomparison}{YWG04}
