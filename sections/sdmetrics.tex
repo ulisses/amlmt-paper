@@ -21,7 +21,7 @@ This tool allows us to access the results from different views. We will approach
 \item \textbf{Catalog} this view provides us with the definitions of the metrics, design rules, and relation matrices for the current data set, and provides literature references and a glossary for them.
 \end{itemize}
 Not a view, but one of the most advanced features in this software is the possibility of defining Custom Design Metrics and Rules. The new metrics are defined in a XML file, with a very particular format, the \textit{SDMetricsML} (SDMetrics Markup Language). \\
-The SDMetrics tool doesn't provide a direct notion of good/bad quality of the design model. Despite that, on the SDMetrics website we can find several indications of how to interpret each output. 
+The SDMetrics tool doesn't provide a direct notion of good/bad quality of the design model. Despite that, on the SDMetrics website we can find several indications of how to interpret each kind of metrics. 
  
 \subsubsection{Results}
 
@@ -35,12 +35,10 @@ Next we will show some printscreen's taken from SDMetrics, which will illustrate
 \end{center}
 \end{figure} 
 
-Em vez da metrics table, meter um parágrafo resumido.\\
-
 \textbf{Histogram}
 \begin{figure}[H]
 \begin{center}
-\includegraphics[width=1\textwidth]{images/histogram.png}
+\includegraphics[width=1\textwidth]{images/table.png}
 \caption{Histogram for class diagrams evaluating the metric NumAttr}\label{img:histogram}
 \end{center}
 \end{figure} 
@@ -52,3 +50,9 @@ Em vez da metrics table, meter um parágrafo resumido.\\
 \caption{Rule checking for Operations}\label{img:rule}
 \end{center}
 \end{figure} 
+
+Based on the \textit{SDMetrics} manual, we will explain how to interpret each kind of metric, analysed by this software. \\
+Size metrics, which usually count elements inside design elements (class, package, etc). The size metrics are good to estimate developing costs and effort. A large design element may indicate that it suffer's from poor design, resulting in low functional cohesion. This 	has a negative impact on the understandability, reusability, and maintainability of the design element. This size metrics can be directly found on the Metrics Table.\\
+The coupling between design elements is also measured by \textit{SDMetrics}. Coupling is the degree to which the elements in a design are connected. The more the design elements are connected, the more they depend on each others. This high degree of dependency may affect the system maintainability, because when you change a design element, you may need to adapt the connected elements, and the system testability, because a problem in a design element may cause failure in a completly diferent conected element.\\
+
+ 
