@@ -14,28 +14,25 @@ They help us to visualize a system as it is or as we need it to be. Models allow
 
 \par Specifying means building models that are precise, unambiguous and complete. 
 
-The UML addresses the specification of all the important analysis, design and implementation decision. %todo
+The \umlS~addresses the specification of all the important analysis, design and implementation decision. %todo
 
 %% prh idea
-\par One the one hand, one can produce a strict formal specification of the sistem, which allows us to reason over the sistem proprieties, without running the sistem. On the other hand, one can follow a pragmatic aproach, using a diagramatic specification of the sistem, not allowing us to reason over programs, but deriving programs from the model specification.
-
-
-%\par Unified Modeling Language as a standard language to analyze, design and document software intensive solutions
-
-\par That aside, when assessing a modeling language we might infer on its quality.
-%\par The software functionality, trustability, usability, efficiency, maintability and portability.
+\par One the one hand, one can produce a strict formal specification of the system, which allows us to reason over the system proprieties, without running the system.
+On the other hand, one can follow a pragmatic aproach, using a diagramatic specification of the system, not allowing us to reason over programs,
+but deriving programs from the model specification. That aside, when assessing a modeling language we might infer on its quality.
 \begin{quotation}
-Effective management of any process requires quantification, measurement, and modeling. Software metrics provide a quantitative basis for the development and validation of models of the software development process. Metrics can be used to improve software productivity and quality~(\cite{g1:Millis:1998}~).
+Effective management of any process requires quantification, measurement, and modeling.
+Software metrics provide a quantitative basis for the development and validation of models of the software development process.
+Metrics can be used to improve software productivity and quality\cite{g1:Millis:1998}.
 \end{quotation}
 
-%    * Falar da importância das linguagens de modelação como especificação formal de um projecto e também para ter uma visão global do projecto.
-
-%    *Falar da qualidade do SW e das Linguagens em geral e introduzir o tema de "aferição de qualidade em Linguagens de Modelação"; relacionar com o tema das "métricas".
-
-    * Importância do uso de métricas num projecto: no que consistem, o que medem, o que ajudam a melhorar, etc. - esta parte liga-se com o que sugiro abaixo - sugiro partir de uma definição geral de métricas;\\
+The main goal to use model/software metrics is to be able to generate quantifiable measurements from the specifications/software. The use of model metrics is even more
+important to numerous valuable applications in earlier stages of the development process: in scheduling, cost estimation, quality assurance, and personnel task assignments.
 
 \begin{quotation}
-Effective management of any process requires quantification, measurement, and modeling. Software metrics provide a quantitative basis for the development and validation of models of the software development process. Metrics can be used to improve software productivity and quality.~(\cite{g1:Millis:1998}~)
+Effective management of any process requires quantification, measurement, and modeling.
+Software metrics provide a quantitative basis for the development and validation of models of the software development process.
+Metrics can be used to improve software productivity and quality\cite{g1:Millis:1998}.
 \end{quotation}
     
 Nowadays, metrics become increasingly essential for Software Engineering: they are crucial for quality assessment and reengineering processes.
@@ -48,14 +45,9 @@ However, most of the existing approaches involve the analysis of the source code
 In fact, it is not always simple to apply the existing metrics in this earlier stages. 
 As the \textsf{Unified Modeling Language}, proposed by Booch, Jacobson and Rumbaugh\cite{USDPuml} has became a standard for expressing OO systems, apply metrics to these models enables an early estimate of development efforts, implementation time, complexity and cost of the system under development. \\
 
-  * Especificar o tipo de métricas sobre o qual nos vamos focar (UML) - o paragrafo acima ja fala 1pc, completar se tiverem+ideias\\
-  
-In this paper, we will introduce and discuss the major existing metrics for UML models, and focus on present a set of tools designed for measure UML projects.
-In what follows, Section~\ref{assess} is devoted to the metrics assessment process.
-In Section~\ref{metrics} we describe the principal measurements applicable to the most popular UML diagrams.
-Then, in Section~\ref{tools} we present some tools designed for apply metrics to UML models and the results of applying them a real case-study.
+In this paper, we will introduce and discuss the major existing metrics for \umlS~models, and focus on present a set of tools designed for measure \umlS~projects.
+In what follows, Section~\ref{metrics} we describe the principal measurements applicable to the most popular \umlS~diagrams.
+In Section~\ref{tools} we present two of the best tools designed to extract metrics from \umlS~models and the results of applying them a real case-study.
+Then, Section~\ref{assess} is devoted to the metrics assessment process.
 We conclude in Section~\ref{conc} with a comparsion between the presented tools.
-  
-    
-
 
