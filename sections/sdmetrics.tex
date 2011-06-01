@@ -24,7 +24,6 @@ Not a view, but one of the most advanced features in this software is the possib
 The SDMetrics tool doesn't provide a direct notion of good/bad quality of the design model. Despite that, on the SDMetrics website we can find several indications of how to interpret each kind of metrics. 
  
 \subsubsection{Results}
-
 Next we will show some printscreen's taken from SDMetrics, which will illustrate some of the outputs of this software, for our case-study.\\
 
 \textbf{Metrics Table}
@@ -55,8 +54,5 @@ Based on the \textit{SDMetrics} manual, we will explain how to interpret each ki
 Size metrics, which usually count elements inside design elements (class, package, etc). The size metrics are good to estimate developing costs and effort. A large design element may indicate that it suffer's from poor design, resulting in low functional cohesion. This 	has a negative impact on the understandability, reusability, and maintainability of the design element. This size metrics can be directly found on the Metrics Table.\\
 The coupling between design elements is also measured by \textit{SDMetrics}. Coupling is the degree to which the elements in a design are connected. The more the design elements are connected, the more they depend on each others. This high degree of dependency may affect the system maintainability, because when you change a design element, you may need to adapt the connected elements; and the system testability, because a problem in a design element may cause failure in a completly diferent conected element. Taking this in consideration, it is important to minimize coupling.\\
 Inheritance-related metrics usually calculate features such as depth/width of the inheritance and number of ancestors/descendents of a design element. Such as high coupled elements, deep inheritance structures are believed to be more fault-prone. It is harder to fully understand a class that is situated deep in the inheritance tree, because you have to understand it's ancestor's. Also, modifying a design element with many descendants, may have a large impact on the system.\\
-Complexity metrics measure the degree of connectivity between elements of a design element. They are concerned with relationships/dependencies between the elements in the design unit, such as the number of method invocations inside a class. The high complexity between the elements of a design element can make the design harder to understand, therefore more propitious to faults. Complexity metrics are usually strongly correlated with size measures. So even though they are good indicatures of quality, such as fault-proneness, they provide no new knowledge comparing to size metrics.\\
-FALTA-ME FALAR DAS COHESION METRICS
-
-
- 
+Complexity metrics measure the degree of connectivity between elements of a design element. They are concerned with relationships/dependencies between the elements in the design unit, such as the number of method invocations inside a class. The high complexity between the elements of a design element can make the design harder to understand, therefore more propitious to faults. Complexity metrics are usually strongly correlated with size measures. So even though they are good indicatures of quality, such as fault-proneness, they provide no new knowledge comparing to size metrics.
+%FALTA-ME FALAR DAS COHESION METRICS 
