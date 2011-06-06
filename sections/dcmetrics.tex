@@ -1,12 +1,8 @@
-\subsection{Class Diagram Metrics}
+\subsection{Class Diagram and Package Metrics}
 
 These diagrams are used to describe the types of objects in a system and the relationships among them.
 They describe the structure of a system by showing the system classes, their attributes and methods or operations.
 Their quality have a huge impact on the final quality of the software under development, as they describe the general model of the system information.
-
-Measures like the \emph{Number of Attributes in the Class} (NAC), the \emph{Number of Operations in the Class} (NOC), \emph{Number of Inherited Attributes } (NIA), \emph{Number of descents/ancestors od a Class}(NDC/NAC), or even the \emph{Number of Interfaces Implemented} (NII) are used both for indicate the system complexity and as a index of quality.
-Many works present several metrics for this diagrams~\cite{DBLP:journals/Lobjet/GeneroPC00},~\cite{Eichelberger_onclass},~\cite{Yi04acomparison}.
-The OOA metrics defined by Marchesi~\cite{Marchesi:1998:OMU:522081.795010} also contemplate Class Diagrams, as we can see in Table~\ref{t:dcm}.
 
 \begin{table}
 \begin{minipage}[b]{0.5\linewidth}\centering
@@ -46,7 +42,12 @@ PK3 & Overall Coupling among Packages \\ \hline
 \end{minipage}
 \end{table}
 
-In UML, classes can be grouped in Packages to define subsystems or even for implementation purposes.
+Measures like the \emph{Number of Attributes in the Class}, the \emph{Number of Operations in the Class}, \emph{Number of Inherited Attributes}, \emph{Number of descents/ancestors of a Class}, or even the \emph{Number of Interfaces Implemented} are used both for indicate the system complexity and as a index of quality.
+Many works present several metrics for this diagrams~\cite{DBLP:journals/Lobjet/GeneroPC00},~\cite{Eichelberger_onclass},~\cite{Yi04acomparison}.
+The OOA metrics defined by Marchesi~\cite{Marchesi:1998:OMU:522081.795010} also contemplate Class Diagrams, as we can see in Table~\ref{t:dcm}.
+
+
+In UML, classes can be grouped into Packages to define subsystems or even for implementation purposes.
 The measurement of a package complexity is useful to forecast the development efforts of it.
 For that, we can measure properties like the \emph{Number of Classes of a Package}, the \emph{Total Number of Packages in the system}, or the \emph{Number of Interfaces in the Package}.
 Marchesi~\cite{Marchesi:1998:OMU:522081.795010} suggests several Package Metrics as we can see in Table~\ref{t:pcm} that allow to estimate this complexity.
