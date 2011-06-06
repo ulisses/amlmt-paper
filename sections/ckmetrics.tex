@@ -1,26 +1,25 @@
 \subsection{Object-Oriented Software: \textrm{CK} Metrics}
-One of the most popular suites of OO metrics was proposed by Chidamber and Kemerer \cite{Chidamber:1994:MSO:630808.631131}.
-They were proposed to capture different aspects of object-oriented designs, including complexity, coupling and cohesion,
-and were posteriorly adapted for modeling languages as we can see in~\cite{Power2}.
+One of the most popular suites of OO metrics was proposed by Chidamber and Kemerer \cite{Chidamber:1994:MSO:630808.631131} to capture different aspects of object-oriented designs, including complexity, coupling and cohesion. 
+As we can see in~\cite{Power2}, they were posteriorly adapted for modeling languages.
 
-This suite is composed by six metrics: Weighted Methods Per Class (WMC), Depth of Inheritance Tree (DIT), Number of Children (NOC), Coupling between Object Classes (CBO), Response For a Class (RFC), e Lack of Cohesion in Methods (LCOM).
-We detail bellow each metric and its features.\\
+This suite is composed by six metrics: \emph{Weighted Methods Per Class} (WMC), \emph{Depth of Inheritance Tree} (DIT), \emph{Number of Children} (NOC), \emph{Coupling between Object Classes} (CBO), \emph{Response For a Class} (RFC), e \emph{Lack of Cohesion in Methods} (LCOM).
+We detail bellow each metric and its features.
 
-\paragraph{Weighted methods per class} (WMC): This metric regards to the complexity of a class's methods, being equal to the sum of the complexities of those methods defined. There two kinds of WMC metrics:
+\paragraph{Weighted methods per class} (WMC) - This metric regards to the complexity of a class method, being equal to the sum of those methods complexities. There are two kinds of WMC metrics:
 \begin{itemize}
-\item \textbf{$WMC1_{1}$} can be obtained from a class diagram of a \umlS model. It is computed by identifying the class and counting the number of methods in that class, which means that, in this case, the WMC metric considers a method as a unity.
-\item \textbf{$WMC_{cc}$} is also computed by identifying the class and counting the number of methods, but each method is not a unity, is the result of a McCabe Cyclomatic Complexity of it. Another difference is that this kind of WMC cannot be computed only with information of diagrams class, needing information of other kinds of diagrams, like sequence or activity.
+\item \textbf{$WMC1_{1}$} can be obtained from a class diagram of an \umlS model. It is computed by identifying the class and counting the number of methods in that class, which means in this case, that the WMC metric considers each method as an unity.
+\item \textbf{$WMC_{cc}$} is computed by identifying each class and counting its number of methods. Contrarily to \textbf{$WMC1_{1}$}, each method is not an unity: is the result of a McCabe Cyclomatic Complexity of it. This metric cannot be computed only with information of diagrams class, it requires information from other kind of diagrams, like Sequence or Activity diagrams.
 \end{itemize}
 
-\paragraph{Depth of inheritance tree} (DIT): This metric is equal to the maximum length from the class to the root of the inheritance, which could be defined as the depth of the class. It is computed by taking the union of all the class diagrams in a \umlS model and traversing the inheritance hierarchy of the class.
+\paragraph{Depth of inheritance tree} (DIT) - This metric is equal to the maximum length from the class to the root of the inheritance, which could be defined as the depth of the class. It is computed by taking the union of all the class diagrams in a \umlS model and traversing the inheritance hierarchy of the class.
 
-\paragraph{Number of children} (NOC): This metric represents the number of childs and descendants of a certain class. Can be obtained gathering all diagrams class, in a \umlS modulation, and checking all the inheritance relations of the class.
+\paragraph{Number of children} (NOC) - This metric represents the number of childs and descendants of a certain class. Can be obtained gathering all diagrams class, in a \umlS modulation, and checking all the inheritance relations of the class.
 
-\paragraph{Coupling between object classes}: Two classes are related if the method of a class uses a instance variable or method of another class. Counting the number of classes to which the class are related and counting all kind of references of the attributes and parameters of the methods of the class, an estimate of this metric's value can be obtained from the class diagrams. Though, it is possible to calcute a more precise value if the behavioural diagrams are taken into account, since the usage of instance variable and invocation methods are additional information.
+\paragraph{Coupling between object classes} - Two classes are related if a method of a class uses a instance variable or method of another class. **---rever frase--$>$**Counting the number of classes to which the class is related and counting all kind of references of the attributes and parameters of the class methods, an estimate of this metric value can be obtained from the class diagrams. Though, it is possible to calculate a more precise value if the behavioral diagrams are taken into account, since the usage of instance variable and invocation methods are additional information.
 
-\paragraph{Response for a class} (RFC) - This metric is the number of methods that can be invoked by an object of a given class. It can be obtained from a class diagram and, also, by behaviour diagrams (e.g. sequece diagrams), which can inform of several methods of other classes that are invoked by each of the class's methods.
+\paragraph{Response for a class} (RFC) - This metric measures the number of methods that can be invoked by an object of a given class. It can be obtained from a class diagram and from behavior diagrams (e.g. sequence diagrams), which can inform of several methods of other classes that are invoked by each of the class methods.
 
-\paragraph{Lack of cohesion in methods} (LCOM)- Is the metric that measure the number of sets of instance variables accessed by every pair of methods, of a given class, that has a non-empty intersection. With the intention of computing a value for this metric, it is essential the information of the usage instance variables by the methods of a class, i.e., it is needed a sequence diagram (a class diagram does not have information about the usage).
+\paragraph{Lack of cohesion in methods} (LCOM) - It measures the number of sets of instance variables accessed by every pair of methods of a given class, that has a non-empty intersection. For this, is essential to use the information of the usage instance variables by the methods of a class -- i.e., since a class diagram does not have information about the usage, it is required a sequence diagram.\\
 
-The set of metrics that were here defined can be found and cited in several papers (probably the most famous~\cite{Power2}). They are currently the most studied and used to evaluate \uml models.\\
+The set of metrics that were here defined can be found and cited in several papers (probably the most famous~\cite{Power2}). They are currently the most studied and used to evaluate \uml\ models.
 

@@ -1,25 +1,20 @@
 \section{Introduction}
 
-\indent
-\par A model is a representation of reality aiming at the simplification of some complex object.
+Models are a representation of reality aiming at the simplification of some complex objects: they are built so that we can better understand the system being developed.
+%They help us to visualize a system as it is or as we need it to be, allowing to specify the structure and behavior of it.
+They allow us to specify the structure and behavior of a system, providing the guidance lines/blueprints for constructing a system, and finally, they document the decision taken for a given system.
+Specifying means building models that are precise, unambiguous and complete. 
 
-\par Models are built so that we can better understand the system being developed.
-They help us to visualize a system as it is or as we need it to be. Models allow us to specify the structure and behavior of a system, they provide the guidance lines/blueprints in constructing a system, and finally, models document the decision taken for a given system;
+Some models are best described textually, other graphically. All interesting systems exhibit structures that transcend what can be represented in a programming language.
 
+A modeling language is a language whose vocabulary and rules focus on the conceptual and physical representation of a system.%%todo
 
-\par Some models are best described textually, other graphically. All interesting systems exhibit structures that transcend what can be represented in a programming language.
-
-
-\par A modeling language is a language whose vocabulary and rules focus on the conceptual and physical representation of a system.%%todo
-
-\par Specifying means building models that are precise, unambiguous and complete. 
-
-The \umlS~addresses the specification of all the important analysis, design and implementation decision. %todo
 
 %% prh idea
 \par One the one hand, one can produce a strict formal specification of the system, which allows us to reason over the system proprieties, without running the system.
-On the other hand, one can follow a pragmatic aproach, using a diagramatic specification of the system, not allowing us to reason over programs,
+On the other hand, one can follow a pragmatic approach, using a diagrammatic specification of the system, not allowing us to reason over programs,
 but deriving programs from the model specification. That aside, when assessing a modeling language we might infer on its quality.
+
 \begin{quotation}
 Effective management of any process requires quantification, measurement, and modeling.
 Software metrics provide a quantitative basis for the development and validation of models of the software development process.
@@ -33,10 +28,11 @@ In \emph{Forward Engineering} they are used to measure the software quality and 
 In the field of \emph{Software Evolution}, they can be both used to identify stable or unstable parts of a system as to determine where refactoring can be or have been applied\cite{Serge}.
 They even can be used for assessing the quality and complexity of software systems in \emph{Software Reengineering} or \emph{Reverse Engineering}\cite{43044}.
 
+%The \umlS~addresses the specification of all the important analysis, design and implementation decision. %todo
 When focusing on the field of Object-Oriented (OO) systems, many metrics have been proposed for assessing the design of a software system.
 However, most of the existing approaches involve the analysis of the source code and cannot be applied in earlier stages of the development process.
 In fact, it is not always simple to apply the existing metrics in this earlier stages. 
-As the \textsf{Unified Modeling Language}, proposed by Booch, Jacobson and Rumbaugh\cite{USDPuml} has became a standard for expressing OO systems, apply metrics to these models enables an early estimate of development efforts, implementation time, complexity and cost of the system under development. \\
+As the \textsf{Unified Modeling Language}, proposed by Booch, Jacobson and Rumbaugh\cite{USDPuml} has became a standard for expressing, design and specify OO systems, apply metrics to these models enables an early estimate of development efforts, implementation time, complexity and cost of the system under development. \\
 
 In this paper, we will introduce and discuss the major existing metrics for \umlS~models, and focus on present a set of tools designed for measure \umlS~projects.
 In what follows, Section~\ref{metrics} we describe the principal measurements applicable to the most popular \umlS~diagrams.
