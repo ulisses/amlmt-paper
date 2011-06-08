@@ -1,36 +1,21 @@
 \subsection{SDMetrics}
-<<<<<<< HEAD
-SDMetrics is a design measurement tool for analyze a wide range of \uml\ diagrams, including Class, Use Case, Activity and Statemachine diagrams.
-=======
-\sdmetricsS is a design measurement tool for analyze a wide range of \umlS diagrams, including Class, Use Case, Activity and Statemachine diagrams.
->>>>>>> 73cacb11f511b6afc17d51dc917fe95e6158b34d
+\sdmetrics\ is a design measurement tool for analyze a wide range of \uml\ diagrams, including Class, Use Case, Activity and Statemachine diagrams.
 
 For each type of diagram, this tool generates several metrics.
 For example, the \textbf{NumAttr} metric is calculated from Class diagrams and measures the number of attributes in a class.
 Other one is \textbf{ExtPts}, which is calculated from Use Case diagrams, and gives us the number of extension points of a given use case.
 
-<<<<<<< HEAD
-SDMetrics is written in \textsf{Java}, and provides us a graphical user interface for analyze \xmi\footnote{
+\sdmetrics\ is written in \textsf{Java}, and provides us a graphical user interface for analyze \xmi\footnote{
 \xmi\ (\textbf{X}ML \textbf{M}etadata \textbf{I}nterchange)  is an \textit{OMG} (Object Management Group) standard to generate \xml-based representations of \uml\ and other OO data models.} 
-=======
-\sdmetricsS is written in \textsf{Java}, and provides us a graphical user interface for analyze \xmi\footnote{
-\xmi (\textbf{X}ML \textbf{M}etadata \textbf{I}nterchange)  is an \textit{OMG} (Object Management Group) standard to generate \xml -based representations of \umlS and other OO data models.} 
->>>>>>> 73cacb11f511b6afc17d51dc917fe95e6158b34d
 files, most modeling tools support project exportation in \xmi.
 
 This tool allows to access the results from different views. We will introduce the ones that seem the most important:
 \begin{itemize}
-<<<<<<< HEAD
+
 \item \textbf{Metric Data Tables} provides a table that matches each \uml\ model element analyzed (table line) to its value for each metric (table column);
 \item \textbf{Histograms} provides a graphical distribution  for each design metric;
 \item \textbf{Design Comparison} provides us a mean to compare the structural properties of two \uml\ designs. It is very useful to compare the same design in different iterations of the development, or to compare an alternative design to the current one.
 \item \textbf{Rule Checker} design rules and heuristics detect potential problems in the \uml\ design such as incomplete design (i.e. unnamed classes, states without transitions, etc.);  violation of naming conventions for classes, attributes, operations, packages; etc;
-=======
-\item \textbf{Metric Data Tables} provides a table that matches each \umlS model element analyzed (table line) to its value for each metric (table column);
-\item \textbf{Histograms} provides a graphical distribution  for each design metric;
-\item \textbf{Design Comparison} provides us a mean to compare the structural properties of two \umlS designs. It is very useful to compare the same design in different iterations of the development, or to compare an alternative design to the current one.
-\item \textbf{Rule Checker} design rules and heuristics detect potential problems in the \umlS design such as incomplete design (i.e. unnamed classes, states without transitions, etc.);  violation of naming conventions for classes, attributes, operations, packages; etc;
->>>>>>> 73cacb11f511b6afc17d51dc917fe95e6158b34d
 
 \begin{comment}
 	\begin{itemize}
@@ -44,11 +29,7 @@ This tool allows to access the results from different views. We will introduce t
 \end{itemize}
 
 One of the most advanced features in this software is the possibility of defining Custom Design Metrics and Rules. 
-<<<<<<< HEAD
 The new metrics are defined in a \xml file, with a very particular format, the \textit{SDMetricsML} (SDMetrics Markup Language).
-=======
-The new metrics are defined in a \xmlS file, with a very particular format, the \textit{SDMetricsML} (\sdmetricsS Markup Language).
->>>>>>> 73cacb11f511b6afc17d51dc917fe95e6158b34d
 
 The \sdmetricsS tool does not provide a direct notion of good or bad quality of the design model. 
 Despite that, on the \sdmetricsS User Manual\footnote{\url{http://www.sdmetrics.com/manual/index.html}} we can find several indications of how to interpret each kind of metrics. 
