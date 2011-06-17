@@ -13,14 +13,17 @@ One the one hand, one can produce a strict formal specification of the system, w
 On the other hand, one can follow a pragmatic approach, using a diagrammatic specification of the system, not allowing us to reason over programs,
 but deriving programs from the model specification. That aside, when assessing a modeling language we might need to infer on its quality.
 
+\begin{comment}
 \begin{quotation}
 Effective management of any process requires quantification, measurement, and modeling.
 Software metrics provide a quantitative basis for the development and validation of models of the software development process.
 Metrics can be used to improve software productivity and quality\cite{g1:Millis:1998}.
 \end{quotation}
+\end{comment}
 
-The main goal of using model/software metrics is to be able to generate quantifiable measurements from the specifications/software. The use of model metrics is even more
-important to numerous valuable applications in earlier stages of the development process: in scheduling, cost estimation, quality assurance, and personnel task assignments.
+The main goal of using model/software metrics is to be able to generate quantifiable measurements from the specifications/software. 
+According to~\cite{g1:Millis:1998}, metrics can be used to improve software productivity and quality.
+The use of model metrics is even more important to numerous valuable applications in earlier stages of the development process like scheduling, cost estimation, quality assurance, and personnel task assignments.
 Nowadays, this metrics become increasingly essential for Software Engineering: they are crucial even for reengineering processes.
 In \emph{Forward Engineering} they are used to measure the software quality and estimate cost and effort of software projects\cite{Fenton}.
 In the field of \emph{Software Evolution}, they can be both used to identify stable or unstable parts of a system as to determine where refactoring can be or have been applied\cite{Serge}.
@@ -32,9 +35,9 @@ However, most of the existing approaches involve the analysis of the source code
 In fact, it is not always simple to apply the existing metrics in this earlier stages. 
 As the \textsf{Unified Modeling Language}, proposed by Booch, Jacobson and Rumbaugh\cite{USDPuml} has became a standard for expressing, design and specify OO systems, applying metrics to these models enables an early estimate of development efforts, implementation time, complexity and cost of the system under development. \\
 
-In this paper, we will introduce and discuss the major existing metrics for \uml\ models, and focus on present a set of tools designed for measuring \uml\ projects.
-We start in Section~\ref{metrics} to describe the principal measurements applicable to the most popular \uml\ diagrams.
+In this paper, we introduce and discuss the major existing metrics for \uml\ models and present a set of tools designed for measuring \uml\ projects.
+In Section~\ref{metrics} we describe the principal measurements applicable to the most popular \uml\ diagrams.
 Then, in Section~\ref{tools} we present two of the best tools designed to extract metrics from \uml\ models and the results of applying them to a real case-study.
 Then, Section~\ref{assess} is devoted to the metrics assessment problem.
-Finally, we conclude in Section~\ref{conc} with a comparison between the presented tools.
+We conclude in Section~\ref{conc} with a final balance of these topics.
 

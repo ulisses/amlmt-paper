@@ -77,16 +77,27 @@ On the left, we can see an Histogram for class diagrams evaluating the \emph{Num
 
 
 
-Size metrics, which usually count elements inside design elements (class, package, etc), are good to estimate developing costs and effort, and can be directly found on the Metrics Table.
+Size metrics usually count elements inside design elements (class, package, etc).
+They are good to estimate developing costs and effort, and can be directly found on the Metrics Table.
 A large design element may indicate that it suffers from poor design, resulting in low functional cohesion. This has a negative impact on the understandability, reusability, and maintainability of the design element.
 
 %The coupling between design elements is also measured by \sdmetrics. 
-Coupling is the degree to which the elements in a design are connected: the more they are connected, the more they depend on each others. This high degree of dependency may affect the system maintainability, because when you change a design element, you may need to adapt the connected elements; and the system testability, because a problem in a design element may cause failure in a completely different connected element. Taking this in consideration, it is important to minimize coupling.
+Measure \emph{Coupling} is estimate the degree of elements connection in a design: the more they are connected, the more they depend on each others. 
+%Coupling is the degree to which the elements in a design are connected: the more they are connected, the more they depend on each others. 
+Changing a design element may force the user to adapt the connected elements; also a problem in a design element may cause failure in a completely different connected element. 
+An high degree of dependency may affect the system maintainability and testability -- it is crucial to minimize coupling.
 
-Inheritance-related metrics usually calculate features such as depth/width of the inheritance and number of ancestors/descendents of a design element. Such as high coupled elements, deep inheritance structures are believed to be more fault-prone. It is harder to fully understand a class that is situated deep in the inheritance tree, because you have to understand its ancestors. Also, modifying a design element with many descendants, may have a large impact on the system.
+Inheritance-related metrics usually calculate features such as depth/width of the inheritance and number of ancestors/descendants of a design element. Such as high coupled elements, deep inheritance structures are believed to be more fault-prone. It is harder to fully understand a class that is situated deep in the inheritance tree, because you have to understand its ancestors. Also, modifying a design element with many descendants, may have a large impact on the system.
 
-Complexity metrics measure the degree of connectivity between elements of a design element. They are concerned with relationships/dependencies between the elements in the design unit, such as the number of method invocations inside a class. The high complexity between the elements of a design element can make the design harder to understand, therefore more propitious to faults. Complexity metrics are usually strongly correlated with size measures. So even though they are good indicators of quality, such as fault-proneness, they provide no new knowledge comparing to size metrics.\\
+Complexity metrics measure the degree of connectivity between elements of a design element. They are concerned with relationships/dependencies between the elements in the design unit, such as the number of method invocations inside a class. The high complexity between the elements of a design element can make the design harder to understand, therefore more propitious to faults. Complexity metrics are usually strongly correlated with size measures. So even though they are good indicators of quality, such as fault-proneness, they provide no new knowledge comparing to size metrics.
 
-In general, this directions lead us to beliefe that the lower the metrics values are, the better. Looking at the modelation which is our case study, it is not easy to establish  a maximum value for each metric. Either way, and looking at the modelation as an all, \textit{GCS} class for examle, seems to have to many operations (26), specialy compared to the rest of the classes. On the other hand, some classes look like they are missing operations. Taking this in regard, we should analyse carefully this classe, and perceive which operations do not belong to it, and should be given to other classes. Also classes that lack operations, should be completed.
+In general, these guidelines lead us to belief that the lower the metrics values are, the better.
+In what concerns our case-study, after observed the metrics obtained we have noticed that \emph{GCS} class seems to have too many operations (26), specially compared with the rest of the classes.
+On the other hand, some classes look like they are missing operations.
+These conclusions suggest a careful analysis of the project to identify classes which operations do not belong to them and should be given to other classes; also classes that lack operations, should be completed.
+This is just an example of how the output of \sdmetrics\ could be useful during the modeling process.
 
-This is just an example of how the output of \sdmetrics\ could be usefull during the modelation process.
+\begin{comment}
+In general, this directions lead us to belief that the lower the metrics values are, the better. Looking at the modelation which is our case study, it is not easy to establish  a maximum value for each metric. Either way, and looking at the modelation as an all, \textit{GCS} class for example, seems to have to many operations (26), specially compared to the rest of the classes. On the other hand, some classes look like they are missing operations. Taking this in regard, we should analyze carefully this class, and perceive which operations do not belong to it, and should be given to other classes. Also classes that lack operations, should be completed.
+This is just an example of how the output of \sdmetrics\ could be useful during the modelation process.
+\end{comment}
