@@ -1,30 +1,33 @@
 \section{Conclusion} \label{conc}
 
-In general, the software development process follows a systematic approach aiming the achievement of a quality system.
-This software quality is not limited to the development of systems which respect several quality standards; it also ensures that the software fulfills all the specified requirements.
-Thus, it became essential to include metrics on the software development lifecycle for monitoring its quality.
-Most of the existing approaches involve a source code analysis and cannot be applied in earlier stages of the development process.
-Applying metrics to \uml\ models enable an early estimate of development efforts, implementation time, complexity and cost of the system under development.
-For this paper we focus our research on the most relevant metrics for this models and into testing two tools capable to measure them: \sdmetrics\ and  \entArch\ systems.
+In general, the software development process follows a systematic approach aiming at a product/system of quality.
+The quality criterion is not limited to the attributes of the final product, whether they comply with industry standards or not; it also ensures that the software fulfills all the specified requirements.
+Most of the existing approaches that include metrics on the software lifecycle involve source code analysis and cannot be applied in earlier stages of the development process.
+Applying metrics to \uml\ models enables the estimation of development effort at an earlier stage, as well as implementation time, complexity and cost of the system under development.
+
+In this paper we focus on the most relevant metrics for \uml\ models and on two tools capable of measuring them: \sdmetrics\ and  \entArch\ systems.
+We believe that our research gathers the more consistent and relevant metrics for assessing the quality of \uml\ models. 
+The paper aims at offering an overview of the advantages of an early estimation of the process efforts, and to provide guidelines to the most important works on this area
+Combined with a study of \uml\ metrics extraction tools, it represents an important support for an end user which needs to pick up a tool that best suits its needs.
 
 %A qualidade na ̃o passa apenas pela obtenc ̧a ̃o de software que respeita as diversas normas e padro ̃es de qualidade, mas tambe ́m pela garantia de que este cumpre todos os requisitos especificados. As medic ̧o ̃es quantitativas associadas a esta problema ́tica revelam-se essenciais em qualquer cieˆncia, o que na ̃o e ́ excepc ̧a ̃o na Engenharia de Software: existe um esforc ̧o cont ́ınuo para encontrar novas propostas, adequadas ao desenvolvimento de software. Com este artigo pretendemos assim mostrar como tirar partido das Linguagens de Modelac ̧a ̃o existentes, e aplicar estas medic ̧o ̃es qualitativas numa fase mais inicial do projecto (aquando a sua modelac ̧a ̃o), de forma a na ̃o centrar a ana ́lise apenas no co ́digo fonte. Apresentamos assim as principais me ́tricas existentes dentro da a ́rea da medic ̧a ̃o de modelos de UML e algumas das principais ferramentas para especificac ̧a ̃o de me ́tricas sobre UML, que combinado com a aplicac ̧a ̃o de me ́tricas tambe ́m ao co ́digo fonte se revela um aliado fundamental para uma melhor gesta ̃o do software produzido.
 
 %SDMetrics
-We can conclude that \sdmetrics\ is a versatile tool for calculate a large set of metrics over a wide range of \uml\ diagrams. Based on this metrics we can try to measure the quality and complexity of a software model.
+We can conclude that \sdmetrics\ is a versatile tool to calculate a large set of metrics over a wide range of \uml\ diagrams. Based on this metrics we can try to measure the quality and complexity of a software model.
 It has an interesting GUI which provides several output views, from simple \emph{tables} to \emph{Histograms}. It finds potential problems with the model and also enables new metrics definition.
 
-The major disadvantage of this tool is the inability of giving the user a plain and simple notion of the model quality, although \sdmetrics\ Manual provides simple tips of how to interpret each kind of metric -- crucial for a correct results reading.
+The major disadvantage of this tool is the incapability of giving the user a plain and simple notion of the model quality, although \sdmetrics\ Manual provides simple tips of how to interpret each kind of metric -- crucial for a correct results reading.
 At a glance, \sdmetrics\ results are guidelines for finding the good and the bad points of  \uml\ models, not a full specification of the models quality. 
 %Although good documentation is provided,  which provide guidelines to the result interpretation.
 
-On the other hand, \entArch\ is a full formal \uml\ specification environment that also supports metrics calculation oriented to Use Case diagrams. 
+On the other hand, \entArch\ is a full formal \uml\ specification environment that supports metrics calculation oriented to Use Case diagrams. 
 It is driven to enterprise market and oriented to minimize the cost and time spent with the production process.
-
-This tool provides simple results and represents a good choice for have an estimation of the implementation cost on a formally specified system. 
-With its system wizard, the user can adapt the value of the factors related to the environment and technics complexity for obtain an accurate estimation of the system final cost.
-This requires some extra user interaction in the specification of a task complexity and a large knowledge of the system under development.
+This tool provides simple results and represents a good choice to have an estimation of the
+implementation costs based on a formal system specification.
+With its system wizard, the user can adapt the value of the factors related to the environment and technics complexity, to obtain an accurate estimation of the system final cost.
+This requires extra user interaction in the specification of a task complexity and a large knowledge of the system under development.
 This complexity could be archived by other means if other types of diagrams were also analyzed.
-Summing up, \entArch\  does not provide any kind of analysis about the quality of the model or do any automatic analysis about the system complexity: it estimates the final cost and effort of the project.
+Summing up, \entArch\ does not provide any kind of quality model analysis or do any automatic system complexity evaluation: it estimates the final cost and effort of the project.
 
 \begin{comment}
 %bad
